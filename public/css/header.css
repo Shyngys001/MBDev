@@ -1,0 +1,158 @@
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--grey);
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  max-width: 200px;
+}
+
+.header-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+.header nav ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* 
+.header nav ul a:nth-child(2):hover + .header-about {
+  display: flex;
+} 
+*/
+
+.header-about {
+  display: none;
+  position: fixed;
+  top: 70px;
+  left: 48%;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: var(--white);
+}
+
+.header-about ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.language, .languagee {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 70px;
+  border-radius: 12px;
+  border: 1px solid var(--black);
+}
+
+.languages, .languagess {
+  display: none;
+  width: 70px;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  background-color: var(--white);
+  border-radius: 12px;
+  border: 1px solid var(--black);
+  overflow: hidden;
+}
+
+.languagess {
+  top: 300px;
+  right: initial;
+}
+
+.languages ul, .languagess ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.languages ul a, .languagess ul a {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+}
+
+.languages ul a:hover, .languagess ul a:hover {
+  background-color: var(--grey);
+}
+
+.menu-btn {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 100vw;
+  padding: 36px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: var(--grey-1);
+  transition: all 0.5s;
+}
+
+.x-mark {
+  cursor: pointer;
+  position: absolute;
+  right: 24px;
+}
+
+.menu-link {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menu li {
+  color: var(--white);
+}
+
+.menu .language {
+  border: var(--white);
+  background-color: var(--grey-1);
+}
+
+.menu .languagess li {
+  color: var(--black);
+}
+
+@media screen and (max-width: 700px) {
+  .header nav, .language {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
