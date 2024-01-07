@@ -1,0 +1,81 @@
+:root {
+  --primary: #0066FF;
+  --white: #FFFFFF;
+  --black: #000000;
+  --grey: #ECECEC;
+  --grey-1: #262626;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--grey);
+}
+
+h1, h2, h3, h4, h5, h6,
+p, a, li, small, strong, button {
+  font-family: "Golos Text", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  color: var(--black);
+}
+
+a, button {
+  cursor: pointer;
+}
+
+path, polygon {
+  fill: var(--grey);
+}
+
+h2 {
+  margin-bottom: 40px;
+}
+
+strong {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.button {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 20px;
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.container-content {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    max-width: 800px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    max-width: 700px;
+  }
+}

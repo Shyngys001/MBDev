@@ -1,62 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap');
 
+@import url("public/css/index.css");
 @import url("public/css/header.css");
 @import url("public/css/footer.css");
-
-:root {
-  --white: #FFFFFF;
-  --black: #000000;
-  --grey: #ECECEC;
-  --grey-1: #262626;
-}
-
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: var(--grey);
-}
-
-h1, h2, h3, h4, h5, h6,
-p, a, li, small, strong, button {
-  font-family: "Golos Text", sans-serif;
-  text-decoration: none;
-  list-style: none;
-  color: var(--black);
-}
-
-a, button {
-  cursor: pointer;
-}
-
-path, polygon {
-  fill: var(--grey);
-}
-
-.container {
-  max-width: 1400px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
-@media screen and (max-width: 1400px) {
-  .container {
-    max-width: 1000px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .container {
-    max-width: 800px;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .container {
-    max-width: 700px;
-  }
-}
+@import url("public/css/recomendation.css");
+@import url("public/css/description.css");
+@import url("public/css/service.css");
+@import url("public/css/about.css");

@@ -1,0 +1,28 @@
+.service {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.service-content {
+  border: 1px solid var(--black);
+  border-radius: 16px;
+  padding: 40px;
+}
+
+.service-image {
+  width: 100%;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 750px) {
+  .service {
+    grid-template-columns: 1fr;
+  }
+}
