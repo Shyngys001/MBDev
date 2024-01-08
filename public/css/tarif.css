@@ -1,0 +1,75 @@
+#tarif h2 {
+    text-align: center;
+}
+
+#prices {
+    width: 70%;
+    height: 150px;
+    background-color: var(--white);
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    z-index: -1;
+    margin-top: 50px;
+    
+}
+
+#unordered{
+    padding-left: 15px;
+}
+
+#unordered li{
+    list-style-type:initial;
+    margin: 0;
+    font-size: calc(1vw + 1px);
+    padding: 5px;
+}
+
+.prices_1 {
+    width: 70%;
+}
+
+.prices_1 h3 {
+    font-size: calc(1vw + 8px);
+
+}
+
+.prices_2 {
+    position: absolute;
+    width: 30%;
+    bottom: 0;
+    right: 0;
+}
+
+.prices_2 h2 {
+    position: absolute;
+    bottom: 0;
+    border-bottom: solid 2px var(--primary);
+    font-size: calc(1vw + 15px);
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .prices_2 h2 {
+        position: absolute;
+        bottom: 0;
+        border-bottom: solid 2px var(--primary);
+        font-size: calc(1vw + 5px);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .prices_2 h2 {
+        position: absolute;
+        bottom: 0;
+        border-bottom: solid 2px var(--primary);
+        font-size: calc(1vw + 7px);
+    }
+    #unordered{
+        padding-left: 15px;
+    }
+}
