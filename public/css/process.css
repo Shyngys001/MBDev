@@ -63,4 +63,7 @@
     .process_info p {
         font-size: calc(1vw + 9px);
     }
+    .process_info h1{
+        color: var(--primary);
+    }
   }
