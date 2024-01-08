@@ -24,6 +24,27 @@ p, a, li, small, strong, button {
   color: var(--black);
 }
 
+h1 {
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.info {
+  font-size: 20px;
+}
+
 a, button {
   cursor: pointer;
 }
@@ -42,6 +63,7 @@ strong {
 }
 
 .button {
+  font-weight: 600;
   border: none;
   border-radius: 12px;
   padding: 12px 20px;

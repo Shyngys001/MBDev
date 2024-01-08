@@ -4,8 +4,8 @@
 }
 
 .description-image {
-  width: 444px;
-  height: 444px;
+  width: 500px;
+  height: 400px;
   border-radius: 16px;
   overflow: hidden;
 }
@@ -17,16 +17,22 @@
   object-position: center;
 }
 
+.description-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 @media screen and (max-width: 1400px) {
   .description-image {
-    width: 333px;
-    height: 333px;
+    width: 460px;
+    height: 300px;
   }
 }
 
 @media screen and (max-width: 1000px) {
   .description-image {
-    width: 288px;
+    width: 600px;
     height: 288px;
   }
 }

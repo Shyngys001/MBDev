@@ -21,6 +21,10 @@
   object-fit: cover;
 }
 
+.service-info h3 {
+  margin-bottom: 12px;
+}
+
 @media screen and (max-width: 750px) {
   .service {
     grid-template-columns: 1fr;
