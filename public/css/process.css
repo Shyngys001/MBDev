@@ -44,7 +44,7 @@
 
 #important_info {
     color: var(--grey-1);
-    font-size: calc(1vw + 6px);
+    font-size: calc(1vw + 9px);
     font-weight: 100;
 
 }
@@ -55,12 +55,12 @@
         font-size: calc(1vw + 5px);
     }
     #process_info_1_2, #process_info_2_2, #process_info_3_2, #process_info_4_2, #process_info_5_2, #process_info_6_2 {
-        font-size: calc(1vw + 10px);
+        font-size: calc(1vw + 15px);
     }
   }
   
   @media screen and (max-width: 750px) {
     .process_info p {
-        font-size: calc(1vw + 7px);
+        font-size: calc(1vw + 9px);
     }
   }

@@ -5,7 +5,7 @@
 #technology h3 {
     color: var(--grey-1);
     font-weight: 100;
-    font-size: calc(1vw + 6px);
+    font-size: calc(1vw + 9px);
 }
 
 .technology {
@@ -40,5 +40,13 @@
   @media screen and (max-width: 750px) {
     .technology {
         justify-content: space-around;
+    }
+    .technologies {
+        width: calc(1vw + 150px);
+        height: 100px;
+    }
+    .technologies img {
+        margin: 0 auto;
+        width: calc(1vw + 70px);
     }
   }
