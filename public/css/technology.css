@@ -12,9 +12,11 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    gap: 5vw;
+    row-gap: calc(100% + 5vw);
     padding: 50px;
     justify-content: space-between;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .technologies {
@@ -32,17 +34,11 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .technology {
-        gap: 5vw;
-        padding: 10px;
-    }
+   
   }
   
   @media screen and (max-width: 750px) {
-    .technologies img {
-        width: calc(1vw + 80px);
-    }
     .technology {
-        padding: 10px;
+        justify-content: space-around;
     }
   }
