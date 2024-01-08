@@ -1,6 +1,7 @@
 .description {
   display: flex;
   gap: 64px;
+  align-items: center;
 }
 
 .description-image {
@@ -21,6 +22,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 70%;
 }
 
 @media screen and (max-width: 1400px) {
@@ -33,7 +35,14 @@
 @media screen and (max-width: 1000px) {
   .description-image {
     width: 600px;
-    height: 288px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 999px){
+  .description-image {
+    width: 600px;
+    height: 300px;
   }
 }
 
@@ -45,6 +54,12 @@
   }
 
   .description-image {
+    width: 100%;
+    height: 300px;
+
+  }
+
+  .description-info {
     width: 100%;
   }
 }
