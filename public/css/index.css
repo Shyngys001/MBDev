@@ -6,6 +6,10 @@
   --grey-1: #262626;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;

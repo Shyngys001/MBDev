@@ -19,3 +19,10 @@ document.querySelector(".menu-x").addEventListener("click", () => {
   document.querySelector(".menu").style.left = "100vw";
   document.querySelector(".menu").style.right = "-100vw";
 });
+
+document.querySelectorAll('.menu-link a').forEach(item => {
+  item.addEventListener('click', () => {
+    document.querySelector('.menu').style.left = '100vw';
+    document.querySelector('.menu').style.right = '-100vw';
+  });
+});
