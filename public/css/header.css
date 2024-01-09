@@ -4,6 +4,7 @@ header {
   right: 0;
   left: 0;
   background-color: var(--grey);
+  z-index: 1;
 }
 
 .header {
