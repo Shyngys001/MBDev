@@ -12,7 +12,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    row-gap: calc(100% + 5vw);
+    row-gap: calc(100% + 2vw);
     padding: 50px;
     justify-content: space-between;
     padding-right: 0;
@@ -26,6 +26,13 @@
     border-radius: 15px;
     display: flex;
     align-items: center;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.technologies:hover {
+    transform: scale(1.05);
+    background-color: var(--grey-1);
 }
 
 .technologies img {

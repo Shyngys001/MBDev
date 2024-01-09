@@ -27,6 +27,15 @@ footer {
   gap: 20px;
 }
 
+.footer-contacts svg {
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.footer-contacts svg:hover {
+  transform: scale(1.15);
+}
+
 .footer-rights {
   text-align: end;
 }
@@ -56,3 +65,12 @@ footer {
   }
 }
 
+
+#mbdev {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+#copyright {
+  color: var(--white);
+}
