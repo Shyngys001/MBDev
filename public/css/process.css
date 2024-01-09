@@ -1,6 +1,4 @@
 .process_info {
-    width: 400px;
-    height: 350px;
     border-radius: 15px;
     background-color: var(--white);
     padding: 15px;
@@ -8,9 +6,10 @@
 }
 
 .process {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 4vw;
+    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
 
 #process {
@@ -64,5 +63,10 @@
     }
     .process_info h1{
         color: var(--primary);
+    }
+
+    .process {
+        grid-template-columns:1fr;
+
     }
   }
