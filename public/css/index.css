@@ -64,6 +64,7 @@ h2 {
 strong {
   color: var(--primary);
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .button {
