@@ -1,55 +1,59 @@
-#technology a {
-    color: var(--primary);
+#technology > div > h2 > strong {
+  text-decoration: none;
 }
 
-#technology h3 {
-    color: var(--grey-1);
-    font-weight: 100;
-    font-size: calc(1vw + 9px);
+#technology > div > h2 {
+  margin-bottom: 20px;
+}
+
+#technology > div > p {
+  margin-bottom: 40px;
 }
 
 .technology {
-    margin-top: 50px;
-    width: 100%;
-    display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
-  
 }
 
 .technologies {
-    height: 250px;
-    background-color: var(--white);
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    transition: all 1s ease-in-out;
-}
-
-.technologies:hover {
-    transform: scale(1.05);
-    background-color: var(--grey-1);
+  max-height: 160px;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 16px;
+  transition: all 0.2s;
 }
 
 .technologies img {
-    margin: 0 auto;
-    width: calc(1vw + 100px);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.technologies:hover {
+  background-color: var(--grey-1);
+  transform: scale(1.05);
+}
+
+.technologies:nth-child(4):hover img,
+.technologies:nth-child(8):hover img,
+.technologies:nth-child(12):hover img {
+  filter: invert(100%);
 }
 
 @media screen and (max-width: 1000px) {
-   
+  .technology {
+    grid-template-columns: repeat(3, 1fr);
   }
-  
-  @media screen and (max-width: 750px) {
-    .technology {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .technologies {
-        height: 120px;
-    }
-    .technologies img {
-        margin: 0 auto;
-        width: calc(1vw + 70px);
-    }
+}
+
+@media screen and (max-width: 750px) {
+  .technology {
+    grid-template-columns: repeat(2, 1fr);
   }
+}

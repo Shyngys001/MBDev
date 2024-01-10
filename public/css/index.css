@@ -21,7 +21,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6,
-p, a, li, small, strong, button {
+p, a, li, small, strong, span, button {
   font-family: "Golos Text", sans-serif;
   text-decoration: none;
   list-style: none;
@@ -35,6 +35,7 @@ h1 {
 
 h2 {
   font-size: 32px;
+  margin-bottom: 40px;
 }
 
 h3 {
@@ -45,26 +46,27 @@ p {
   font-size: 16px;
 }
 
-.info {
-  font-size: 20px;
-}
-
 a, button {
   cursor: pointer;
-}
-
-path, polygon {
-  fill: var(--grey);
-}
-
-h2 {
-  margin-bottom: 40px;
 }
 
 strong {
   color: var(--primary);
   text-decoration: underline;
   cursor: pointer;
+}
+
+span {
+  font-size: 100px;
+  font-weight: 900;
+}
+
+path, polygon {
+  fill: var(--grey);
+}
+
+.info {
+  font-size: 20px;
 }
 
 .button {
