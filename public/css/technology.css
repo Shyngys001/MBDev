@@ -40,11 +40,12 @@
   transform: scale(1.05);
 }
 
-.technologies:nth-child(4):hover img,
+.technologies:nth-child(4):hover img ,
 .technologies:nth-child(8):hover img,
-.technologies:nth-child(12):hover img {
+.technologies:nth-child(12):hover img{
   filter: invert(100%);
 }
+
 
 @media screen and (max-width: 1000px) {
   .technology {

@@ -44,6 +44,10 @@ document.querySelector(".mode").addEventListener("click", () => {
     document.querySelector("#gif2").src = "public/images/dark4.gif"
     document.querySelector("#gif4").src = "public/images/dark3.gif"
 
+    document.querySelectorAll(".technologies img").forEach(function(img) {
+      img.style.filter = "invert(100%)";
+    });
+    
     mode = !mode;
   } else {
     document.querySelector(".dark").classList.remove("switch-mode");
@@ -58,6 +62,12 @@ document.querySelector(".mode").addEventListener("click", () => {
     document.querySelector("#gif1").src = "public/images/5.gif"
     document.querySelector("#gif2").src = "public/images/6.gif"
     document.querySelector("#gif4").src = "public/images/4.gif"
+
+    document.querySelectorAll(".technologies img").forEach(function(img) {
+      img.style.filter = "invert(0%)";
+    });
+    
+
     mode = !mode;
   }
 });
