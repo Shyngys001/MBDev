@@ -39,6 +39,11 @@ document.querySelector(".mode").addEventListener("click", () => {
     document.documentElement.style.setProperty("--grey", "#1E1E1E");
     document.documentElement.style.setProperty("--grey-1", "#ECECEC");
 
+    document.querySelector("#gif3").src = "public/images/dark1.gif"
+    document.querySelector("#gif1").src = "public/images/dark2.gif"
+    document.querySelector("#gif2").src = "public/images/dark4.gif"
+    document.querySelector("#gif4").src = "public/images/dark3.gif"
+
     mode = !mode;
   } else {
     document.querySelector(".dark").classList.remove("switch-mode");
@@ -49,6 +54,10 @@ document.querySelector(".mode").addEventListener("click", () => {
     document.documentElement.style.setProperty("--grey", "#ECECEC");
     document.documentElement.style.setProperty("--grey-1", "#1E1E1E");
 
+    document.querySelector("#gif3").src = "public/images/3.gif"
+    document.querySelector("#gif1").src = "public/images/5.gif"
+    document.querySelector("#gif2").src = "public/images/6.gif"
+    document.querySelector("#gif4").src = "public/images/4.gif"
     mode = !mode;
   }
 });
