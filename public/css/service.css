@@ -11,6 +11,10 @@
   padding: 40px;
 }
 
+.service-content-mode {
+  background-color: #1D1D1D;
+}
+
 .service-image {
   width: 100%;
   text-align: center;
