@@ -35,15 +35,19 @@
   object-fit: contain;
 }
 
+/* 
+#90c53f leaf
+#4ad5ff react
+#ff5c33 tilda
+*/
+
 .technologies:hover {
   background-color: var(--grey-1);
   transform: scale(1.05);
 }
 
-.technologies:nth-child(4):hover img,
-.technologies:nth-child(8):hover img,
-.technologies:nth-child(12):hover img {
-  filter: invert(100%);
+.technologies:nth-child(8) img {
+  fill: #4ad5ff;
 }
 
 
