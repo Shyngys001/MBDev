@@ -36,4 +36,8 @@
   .process {
     grid-template-columns: 1fr;
   }
+
+  .process-block {
+    padding: 24px;
+  }
 }

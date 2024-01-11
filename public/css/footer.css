@@ -64,13 +64,3 @@ footer {
     justify-content: start;
   }
 }
-
-
-#mbdev {
-  color: var(--primary);
-  text-decoration: underline;
-}
-
-#copyright {
-  color: var(--white);
-}

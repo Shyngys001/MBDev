@@ -29,3 +29,9 @@
 .price h3 {
   white-space: nowrap;
 }
+
+@media screen and (max-width: 1000px) {
+  .tarif-card {
+    padding: 24px 0 24px 24px;
+  }
+}

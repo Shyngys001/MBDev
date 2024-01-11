@@ -27,6 +27,12 @@
   margin-bottom: 12px;
 }
 
+@media screen and (max-width: 1000px) {
+  .service-content {
+    padding: 24px;
+  }
+}
+
 @media screen and (max-width: 750px) {
   .service {
     grid-template-columns: 1fr;

@@ -28,6 +28,7 @@ document.querySelectorAll('.menu-link a').forEach(item => {
   });
 });
 
+
 let mode = false;
 document.querySelector(".mode").addEventListener("click", () => {
   if (!mode) {
