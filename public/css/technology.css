@@ -35,12 +35,6 @@
   object-fit: contain;
 }
 
-/* 
-#90c53f leaf
-#4ad5ff react
-#ff5c33 tilda
-*/
-
 .technologies:hover {
   background-color: var(--grey-1);
   transform: scale(1.05);
