@@ -64,3 +64,22 @@
   object-fit: cover;
   object-position: left;
 }
+
+.project-about-btn {
+  margin-top: 24px;
+}
+
+.project-about-btn:hover .arrow {
+  transform: translateX(5px);
+}
+
+@media screen and (max-width: 1000px) {
+  .project {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .project > div:last-child {
+    grid-row: 1;
+  }
+}

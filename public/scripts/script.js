@@ -28,15 +28,17 @@ document.querySelectorAll(".menu-link a").forEach(item => {
   });
 });
 
-<<<<<<< HEAD
 
-let mode = false;
-document.querySelector(".mode").addEventListener("click", () => {
-  if (!mode) {
-    document.querySelector(".dark").classList.add("switch-mode");
-    document.querySelector(".light").classList.remove("switch-mode");
-=======
->>>>>>> a3c8c0bc5920b0bcfa5fd2084a7e08f166a9db49
+let link = window.location.href.indexOf("/index.html");
+let newLink = "";
+if (link !== -1) {
+  newLink = window.location.href.substring(0, link) + "/public/pages/portfolio.html";
+}
+
+for (let i of document.getElementsByClassName("portfolio-link")) {
+  i.href = newLink;
+}
+
 
 document.addEventListener("DOMContentLoaded", () => {
   // localStorage.clear();
