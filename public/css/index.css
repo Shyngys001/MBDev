@@ -126,6 +126,21 @@ path, polygon {
   display: none;
 }
 
+.mode-menu {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border: 1px solid var(--black);
+  border-radius: 16px;
+  transition: all 0.2s;
+}
+
+.mode-menu img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media screen and (max-width: 1400px) {
   .container {
     max-width: 1000px;
@@ -135,6 +150,30 @@ path, polygon {
 @media screen and (max-width: 1000px) {
   .container {
     max-width: 800px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  h3 {
+    font-size: 16px;
+  }
+
+  p, li, a {
+    font-size: 14px;
+  }
+
+  span {
+    font-size: 60px;
+  }
+
+  .info {
+    font-size: 16px;
   }
 }
 

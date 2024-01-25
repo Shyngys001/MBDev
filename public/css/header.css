@@ -70,6 +70,10 @@ header {
   background-color: transparent;
 }
 
+.languagee {
+  border: 1px solid #FFFFFF;
+}
+
 .languages, .languagess {
   display: none;
   width: 70px;
@@ -83,7 +87,7 @@ header {
 }
 
 .languagess {
-  top: 300px;
+  top: 270px;
   right: initial;
 }
 
@@ -105,9 +109,19 @@ header {
   background-color: var(--grey);
 }
 
+.current-languagee {
+  color: #FFFFFF;
+}
+
 .menu-btn {
   display: none;
   cursor: pointer;
+  font-size: initial;
+  font-weight: initial;
+}
+
+.menu-btn path {
+  stroke: var(--black);
 }
 
 .menu {
@@ -116,11 +130,11 @@ header {
   right: 0;
   bottom: 0;
   left: 100vw;
-  padding: 36px 24px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  background-color: var(--grey-1);
+  background-color: #262626;
   transition: all 0.5s;
   z-index: 2;
 }
@@ -129,6 +143,8 @@ header {
   cursor: pointer;
   position: absolute;
   right: 24px;
+  font-size: initial;
+  font-weight: initial;
 }
 
 .menu-link {
@@ -139,7 +155,7 @@ header {
 }
 
 .menu li {
-  color: var(--white);
+  color: #ECECEC;
 }
 
 .menu .language {
@@ -151,12 +167,20 @@ header {
   color: var(--black);
 }
 
-@media screen and (max-width: 700px) {
+.chevron path {
+  stroke: var(--black);
+}
+
+@media screen and (max-width: 750px) {
   .header nav, .language {
     display: none;
   }
 
   .menu-btn {
     display: block;
+  }
+
+  .mode {
+    display: none;
   }
 }

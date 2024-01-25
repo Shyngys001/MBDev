@@ -1,5 +1,5 @@
 footer {
-  background-color: var(--grey-1);
+  background-color: #262626;
 }
 
 .footer {
@@ -27,9 +27,13 @@ footer {
   gap: 20px;
 }
 
+.footer-contacts path,
+.footer-contacts polygon {
+  fill: #FFFFFF;
+}
+
 .footer-contacts svg {
-  cursor: pointer;
-  transition: all 1s ease-in-out;
+  transition: all 0.3s;
 }
 
 .footer-contacts svg:hover {
@@ -41,7 +45,7 @@ footer {
 }
 
 .footer-rights a {
-  color: var(--grey);
+  color: #ECECEC;
   white-space: nowrap;
 }
 
@@ -63,14 +67,4 @@ footer {
   .footer-contacts {
     justify-content: start;
   }
-}
-
-
-#mbdev {
-  color: var(--primary);
-  text-decoration: underline;
-}
-
-#copyright {
-  color: var(--white);
 }
