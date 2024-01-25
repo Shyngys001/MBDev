@@ -33,6 +33,8 @@ let link = window.location.href.indexOf("/index.html");
 let newLink = "";
 if (link !== -1) {
   newLink = window.location.href.substring(0, link) + "/public/pages/portfolio.html";
+} else {
+  newLink += "/public/pages/portfolio.html";
 }
 
 for (let i of document.getElementsByClassName("portfolio-link")) {
