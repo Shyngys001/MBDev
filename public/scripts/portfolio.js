@@ -1,3 +1,6 @@
+console.log("portfolio page script");
+
+
 let check0 = false;
 document.querySelector(".header nav ul a:nth-child(2)").addEventListener("click", (event) => {
   event.preventDefault();
@@ -10,50 +13,59 @@ document.querySelector(".header nav ul a:nth-child(2)").addEventListener("click"
   }
 });
 
-
-document.querySelector(".menu-btn").addEventListener("click", () => {
-  document.querySelector(".menu").style.left = "0";
-  document.querySelector(".menu").style.right = "0";
-})
-
-document.querySelector(".menu-x").addEventListener("click", () => {
-  document.querySelector(".menu").style.left = "100vw";
-  document.querySelector(".menu").style.right = "-100vw";
-});
-
-document.querySelectorAll(".menu-link a").forEach(item => {
-  item.addEventListener("click", () => {
-    document.querySelector(".menu").style.left = "100vw";
-    document.querySelector(".menu").style.right = "-100vw";
+for (let i of document.querySelectorAll(".menu-btn")) {
+  i.addEventListener("click", () => {
+    for (let j of document.querySelectorAll(".menu")) {
+      j.style = "right: 0;";
+      j.style = "left: 0;";
+    }
   });
-});
-
-
-let link = window.location.href.indexOf("/public/pages/portfolio.html");
-let newLink = "";
-if (link !== -1) {
-  newLink = window.location.href.substring(0, link) + "/index.html";
 }
 
-for (let i of document.getElementsByClassName("service-link")) {
-  i.href = newLink + "#service";
+for (let i of document.querySelectorAll(".menu-x")) {
+  i.addEventListener("click", () => {
+    for (let j of document.querySelectorAll(".menu")) {
+      j.style = "right: -100vw;";
+      j.style = "left: 100vw;";
+    }
+  });
 }
 
-for (let i of document.getElementsByClassName("about-link")) {
-  i.href = newLink + "#about";
+for (let i of document.querySelectorAll(".menu-link a")) {
+  i.addEventListener("click", () => {
+    for (let j of document.querySelectorAll(".menu")) {
+      j.style = "right: -100vw;";
+      j.style = "left: 100vw;";
+    }
+  });
 }
 
-for (let i of document.getElementsByClassName("process-link")) {
-  i.href = newLink + "#process";
-}
 
-for (let i of document.getElementsByClassName("technology-link")) {
-  i.href = newLink + "#technology";
-}
+// let link = window.location.href.indexOf("/public/pages/portfolio.html");
+// let newLink = "";
+// if (link !== -1) {
+//   newLink = window.location.href.substring(0, link) + "/index.html";
+// }
 
-for (let i of document.getElementsByClassName("tarif-link")) {
-  i.href = newLink + "#tarif";
-}
+// for (let i of document.getElementsByClassName("service-link")) {
+//   i.href = newLink + "#service";
+// }
+
+// for (let i of document.getElementsByClassName("about-link")) {
+//   i.href = newLink + "#about";
+// }
+
+// for (let i of document.getElementsByClassName("process-link")) {
+//   i.href = newLink + "#process";
+// }
+
+// for (let i of document.getElementsByClassName("technology-link")) {
+//   i.href = newLink + "#technology";
+// }
+
+// for (let i of document.getElementsByClassName("tarif-link")) {
+//   i.href = newLink + "#tarif";
+// }
 
 
 document.addEventListener("DOMContentLoaded", () => {

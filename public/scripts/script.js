@@ -1,3 +1,6 @@
+console.log("main page script");
+
+
 let check0 = false;
 document.querySelector(".header nav ul a:nth-child(2)").addEventListener("click", (event) => {
   event.preventDefault();
@@ -11,35 +14,45 @@ document.querySelector(".header nav ul a:nth-child(2)").addEventListener("click"
 });
 
 
-document.querySelector(".menu-btn").addEventListener("click", () => {
-  document.querySelector(".menu").style.left = "0";
-  document.querySelector(".menu").style.right = "0";
-})
-
-document.querySelector(".menu-x").addEventListener("click", () => {
-  document.querySelector(".menu").style.left = "100vw";
-  document.querySelector(".menu").style.right = "-100vw";
-});
-
-document.querySelectorAll(".menu-link a").forEach(item => {
-  item.addEventListener("click", () => {
-    document.querySelector(".menu").style.left = "100vw";
-    document.querySelector(".menu").style.right = "-100vw";
+for (let i of document.querySelectorAll(".menu-btn")) {
+  i.addEventListener("click", () => {
+    for (let j of document.querySelectorAll(".menu")) {
+      j.style = "right: 0;";
+      j.style = "left: 0;";
+    }
   });
-});
-
-
-let link = window.location.href.indexOf("/index.html");
-let newLink = "";
-if (link !== -1) {
-  newLink = window.location.href.substring(0, link) + "/MBDev/public/pages/portfolio.html";
-} else {
-  newLink += "/MBDev/public/pages/portfolio.html";
 }
 
-for (let i of document.getElementsByClassName("portfolio-link")) {
-  i.href = newLink;
+for (let i of document.querySelectorAll(".menu-x")) {
+  i.addEventListener("click", () => {
+    for (let j of document.querySelectorAll(".menu")) {
+      j.style = "right: -100vw;";
+      j.style = "left: 100vw;";
+    }
+  });
 }
+
+for (let i of document.querySelectorAll(".menu-link a")) {
+  i.addEventListener("click", () => {
+    for (let j of document.querySelectorAll(".menu")) {
+      j.style = "right: -100vw;";
+      j.style = "left: 100vw;";
+    }
+  });
+}
+
+
+// let link = window.location.href.indexOf("/index.html");
+// let newLink = "";
+// if (link !== -1) {
+//   newLink = window.location.href.substring(0, link) + "/MBDev/public/pages/portfolio.html";
+// } else {
+//   newLink += "/MBDev/public/pages/portfolio.html";
+// }
+
+// for (let i of document.getElementsByClassName("portfolio-link")) {
+//   i.href = newLink;
+// }
 
 
 document.addEventListener("DOMContentLoaded", () => {

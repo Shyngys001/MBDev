@@ -6,93 +6,7 @@
     
     <title>MBDEV</title>
 
-    <style>
-      #portfolio h1 {
-        margin-top: 64px;
-      }
-
-      .projects {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-      }
-
-      .project {
-        width: 100%;
-        height: 100%;
-        min-height: 500px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-        border: 1px solid var(--black);
-        border-radius: 16px;
-        overflow: hidden;
-      }
-
-      .project-content {
-        padding: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-
-      .project-content button {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        border: none;
-        border-radius: 12px;
-        padding: 12px 20px;
-        background-color: var(--white);
-      }
-
-      .project-logo {
-        width: 100px;
-      }
-
-      .project-logo img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
-
-      .project-info {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-      }
-
-      .project-view {
-        width: 100%;
-        height: 100%;
-      }
-
-      .project-view img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: left;
-      }
-
-      .project-about-btn {
-        margin-top: 24px;
-      }
-
-      .project-about-btn:hover .arrow {
-        transform: translateX(5px);
-      }
-
-      @media screen and (max-width: 1000px) {
-        .project {
-          grid-template-columns: 1fr;
-          gap: 10px;
-        }
-
-        .project > div:last-child {
-          grid-row: 1;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
@@ -125,7 +39,7 @@
 
           <nav>
             <ul>
-              <a class="service-link"><li>Услуги</li></a>
+              <a class="service-link" href="/index.html#service"><li>Услуги</li></a>
               <a href="">
                 <li>О нас
                   <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
@@ -137,13 +51,13 @@
               </a>
               <div class="header-about">
                 <ul>
-                  <a class="about-link"><li>О компании</li></a>
-                  <a class="process-link"><li>Процесс работы</li></a>
-                  <a class="technology-link"><li>Наши технологий</li></a>
+                  <a class="about-link" href="/index.html#service"><li>О компании</li></a>
+                  <a class="process-link" href="/index.html#process"><li>Процесс работы</li></a>
+                  <a class="technology-link" href="/index.html#technology"><li>Наши технологий</li></a>
                 </ul>
               </div>
               <a href="#"><li>Портфолио</li></a>
-              <a class="tarif-link"><li>Тариф</li></a>
+              <a class="tarif-link" href="/index.html#tarif"><li>Тариф</li></a>
             </ul>
           </nav>
 
@@ -175,12 +89,12 @@
         </svg>
       </span>
       <ul class="menu-link">
-        <a class="service-link"><li>Услуги</li></a>
-        <a class="about-link"><li>О компании</li></a>
-        <a class="process-link"><li>Процесс работы</li></a>
-        <a class="technology-link"><li>Наши технологий</li></a>
+        <a class="service-link" href="/index.html#service"><li>Услуги</li></a>
+        <a class="about-link" href="/index.html#service"><li>О компании</li></a>
+        <a class="process-link" href="/index.html#process"><li>Процесс работы</li></a>
+        <a class="technology-link" href="/index.html#technology"><li>Наши технологий</li></a>
         <a href="#"><li>Портфолио</li></a>
-        <a class="tarif-link"><li>Тариф</li></a>
+        <a class="tarif-link" href="/index.html#tarif"><li>Тариф</li></a>
       </ul>
 
       <button class="languagee">
