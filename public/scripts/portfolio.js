@@ -41,31 +41,31 @@ for (let i of document.querySelectorAll(".menu-link a")) {
 }
 
 
-// let link = window.location.href.indexOf("/public/pages/portfolio.html");
-// let newLink = "";
-// if (link !== -1) {
-//   newLink = window.location.href.substring(0, link) + "/index.html";
-// }
+let link = window.location.href.indexOf("/portfolio.html");
+let newLink = "";
+if (link !== -1) {
+  newLink = window.location.href.substring(0, link) + "/index.html";
+}
 
-// for (let i of document.getElementsByClassName("service-link")) {
-//   i.href = newLink + "#service";
-// }
+for (let i of document.getElementsByClassName("service-link")) {
+  i.href = newLink + "#service";
+}
 
-// for (let i of document.getElementsByClassName("about-link")) {
-//   i.href = newLink + "#about";
-// }
+for (let i of document.getElementsByClassName("about-link")) {
+  i.href = newLink + "#about";
+}
 
-// for (let i of document.getElementsByClassName("process-link")) {
-//   i.href = newLink + "#process";
-// }
+for (let i of document.getElementsByClassName("process-link")) {
+  i.href = newLink + "#process";
+}
 
-// for (let i of document.getElementsByClassName("technology-link")) {
-//   i.href = newLink + "#technology";
-// }
+for (let i of document.getElementsByClassName("technology-link")) {
+  i.href = newLink + "#technology";
+}
 
-// for (let i of document.getElementsByClassName("tarif-link")) {
-//   i.href = newLink + "#tarif";
-// }
+for (let i of document.getElementsByClassName("tarif-link")) {
+  i.href = newLink + "#tarif";
+}
 
 
 document.addEventListener("DOMContentLoaded", () => {
