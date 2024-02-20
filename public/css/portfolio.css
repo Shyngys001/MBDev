@@ -86,3 +86,13 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 750px) {
+  .project {
+    gap: 0px;
+  }
+
+  .project-content {
+    padding: 24px;
+  }
+}
