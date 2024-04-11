@@ -45,9 +45,9 @@ for (let i of document.querySelectorAll(".menu-link a")) {
 let link = window.location.href.indexOf("/index.html");
 let newLink = "";
 if (link !== -1) {
-  newLink = window.location.href.substring(0, link) + "/MBDev/portfolio.html";
+  newLink = window.location.href.substring(0, link) + "/portfolio.html";
 } else {
-  newLink += "/MBDev/portfolio.html";
+  newLink += "/portfolio.html";
 }
 
 for (let i of document.getElementsByClassName("portfolio-link")) {
