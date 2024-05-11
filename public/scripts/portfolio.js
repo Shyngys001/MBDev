@@ -68,91 +68,91 @@ for (let i of document.getElementsByClassName("tarif-link")) {
 }
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  localStorage.clear();
-  if (localStorage.getItem("white") &&
-      localStorage.getItem("black") &&
-      localStorage.getItem("grey1") &&
-      localStorage.getItem("grey")) {
-    document.documentElement.style.setProperty("--white", localStorage.getItem("white"));
-    document.documentElement.style.setProperty("--black", localStorage.getItem("black"));
-    document.documentElement.style.setProperty("--grey-1", localStorage.getItem("grey1"));
-    document.documentElement.style.setProperty("--grey", localStorage.getItem("grey"));
-  } else {
-    document.documentElement.style.setProperty("--white", "#FFFFFF");
-    document.documentElement.style.setProperty("--black", "#000000");
-    document.documentElement.style.setProperty("--grey-1", "#1E1E1E");
-    document.documentElement.style.setProperty("--grey", "#ECECEC");
-  }
+// document.addEventListener("DOMContentLoaded", () => {
+//   localStorage.clear();
+//   if (localStorage.getItem("white") &&
+//       localStorage.getItem("black") &&
+//       localStorage.getItem("grey1") &&
+//       localStorage.getItem("grey")) {
+//     document.documentElement.style.setProperty("--white", localStorage.getItem("white"));
+//     document.documentElement.style.setProperty("--black", localStorage.getItem("black"));
+//     document.documentElement.style.setProperty("--grey-1", localStorage.getItem("grey1"));
+//     document.documentElement.style.setProperty("--grey", localStorage.getItem("grey"));
+//   } else {
+//     document.documentElement.style.setProperty("--white", "#FFFFFF");
+//     document.documentElement.style.setProperty("--black", "#000000");
+//     document.documentElement.style.setProperty("--grey-1", "#1E1E1E");
+//     document.documentElement.style.setProperty("--grey", "#ECECEC");
+//   }
 
-  let mode = document.documentElement.style.getPropertyValue("--white") === "#FFFFFF";
+//   let mode = document.documentElement.style.getPropertyValue("--white") === "#FFFFFF";
 
-  switchTheme();
+//   switchTheme();
 
-  document.querySelector(".mode").addEventListener("click", () => switchTheme());
-  document.querySelector(".mode-menu").addEventListener("click", () => switchTheme());
+//   document.querySelector(".mode").addEventListener("click", () => switchTheme());
+//   document.querySelector(".mode-menu").addEventListener("click", () => switchTheme());
 
-  function switchTheme() {
-    if (mode) {
-      switchToDark();
-      mode = !mode;
-    } else {
-      switchToLight();
-      mode = !mode;
-    }
-  }
+//   function switchTheme() {
+//     if (mode) {
+//       switchToDark();
+//       mode = !mode;
+//     } else {
+//       switchToLight();
+//       mode = !mode;
+//     }
+//   }
 
-  function switchToLight() {
-    document.querySelector(".dark").classList.remove("switch-mode");
-    document.querySelector(".light").classList.add("switch-mode");
+//   function switchToLight() {
+//     document.querySelector(".dark").classList.remove("switch-mode");
+//     document.querySelector(".light").classList.add("switch-mode");
 
-    document.querySelector(".dark-menu").classList.remove("switch-mode");
-    document.querySelector(".light-menu").classList.add("switch-mode");
+//     document.querySelector(".dark-menu").classList.remove("switch-mode");
+//     document.querySelector(".light-menu").classList.add("switch-mode");
 
-    document.documentElement.style.setProperty("--white", "#FFFFFF");
-    document.documentElement.style.setProperty("--black", "#000000");
-    document.documentElement.style.setProperty("--grey", "#ECECEC");
-    document.documentElement.style.setProperty("--grey-1", "#1E1E1E");
+//     document.documentElement.style.setProperty("--white", "#FFFFFF");
+//     document.documentElement.style.setProperty("--black", "#000000");
+//     document.documentElement.style.setProperty("--grey", "#ECECEC");
+//     document.documentElement.style.setProperty("--grey-1", "#1E1E1E");
 
-    document.querySelector(".izdin-logo").style = "filter: invert(100);";
+//     document.querySelector(".izdin-logo").style = "filter: invert(100);";
     
-    for (let i of document.getElementsByClassName("arrow")) {
-      i.style = "filter: invert(0);";
-    }
+//     for (let i of document.getElementsByClassName("arrow")) {
+//       i.style = "filter: invert(0);";
+//     }
 
-    localStorage.clear();
-    localStorage.setItem("white", "#000000");
-    localStorage.setItem("black", "#FFFFFF");
-    localStorage.setItem("grey1", "#1E1E1E");
-    localStorage.setItem("grey", "#ECECEC");
-  }
+//     localStorage.clear();
+//     localStorage.setItem("white", "#000000");
+//     localStorage.setItem("black", "#FFFFFF");
+//     localStorage.setItem("grey1", "#1E1E1E");
+//     localStorage.setItem("grey", "#ECECEC");
+//   }
 
-  function switchToDark() {
-    document.querySelector(".dark").classList.add("switch-mode");
-    document.querySelector(".light").classList.remove("switch-mode");
-    document.querySelector(".dark-menu").classList.add("switch-mode");
-    document.querySelector(".light-menu").classList.remove("switch-mode");
+//   function switchToDark() {
+//     document.querySelector(".dark").classList.add("switch-mode");
+//     document.querySelector(".light").classList.remove("switch-mode");
+//     document.querySelector(".dark-menu").classList.add("switch-mode");
+//     document.querySelector(".light-menu").classList.remove("switch-mode");
 
-    document.documentElement.style.setProperty("--white", "#2F2F2F");
-    document.documentElement.style.setProperty("--black", "#FFFFFF");
-    document.documentElement.style.setProperty("--grey", "#1E1E1E");
-    document.documentElement.style.setProperty("--grey-1", "#ECECEC");
+//     document.documentElement.style.setProperty("--white", "#2F2F2F");
+//     document.documentElement.style.setProperty("--black", "#FFFFFF");
+//     document.documentElement.style.setProperty("--grey", "#1E1E1E");
+//     document.documentElement.style.setProperty("--grey-1", "#ECECEC");
 
-    document.querySelector(".izdin-logo").style = "filter: invert(0);";
+//     document.querySelector(".izdin-logo").style = "filter: invert(0);";
 
-    for (let i of document.getElementsByClassName("arrow")) {
-      i.style = "filter: invert(100);";
-    }
+//     for (let i of document.getElementsByClassName("arrow")) {
+//       i.style = "filter: invert(100);";
+//     }
 
-    localStorage.clear();
-    localStorage.setItem("white", "#FFFFFF");
-    localStorage.setItem("black", "#000000");
-    localStorage.setItem("grey1", "#ECECEC");
-    localStorage.setItem("grey", "#1E1E1E");
-  }
+//     localStorage.clear();
+//     localStorage.setItem("white", "#FFFFFF");
+//     localStorage.setItem("black", "#000000");
+//     localStorage.setItem("grey1", "#ECECEC");
+//     localStorage.setItem("grey", "#1E1E1E");
+//   }
 
-  console.log(localStorage.getItem("white"));
-  console.log(localStorage.getItem("black"));
-  console.log(localStorage.getItem("grey1"));
-  console.log(localStorage.getItem("grey"));
-});
+//   console.log(localStorage.getItem("white"));
+//   console.log(localStorage.getItem("black"));
+//   console.log(localStorage.getItem("grey1"));
+//   console.log(localStorage.getItem("grey"));
+// });
